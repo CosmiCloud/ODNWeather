@@ -1,6 +1,6 @@
 # ODNWeather
 
-This script pulls the latest weather observations from 1/500 randomly selected stations from weather.gov and publishes it to the Origintrail V6 Beta testnet. 
+This script pulls the latest weather observations from 1/500 randomly selected stations from weather.gov and publishes it to the Origintrail V6 Beta testnet. Big thanks to @zeroxbt for contributing. 
 
 Currently, SSL needs to be disabled to use this script.
 
@@ -11,3 +11,5 @@ Run: sudo git clone https://github.com/CosmiCloud/ODNWeather.git && cd ODNWeathe
 You can run this script in the background with: nohup ./run_weather.sh &
 
 NOTICE: If you get a 404 error while running, that is ok, that is the weather.gov api failing to return results for that call.
+
+
