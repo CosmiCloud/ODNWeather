@@ -8,5 +8,6 @@ Running Origintrail V6 Beta 1 testnode required.
 
 Run: sudo git clone https://github.com/CosmiCloud/ODNWeather.git && cd ODNWeather && sudo npm install axios && sudo npm install dkg-client@beta.1 && ./run_weather.sh
 
+You can run this script in the background with: nohup ./run_weather.sh &
 
 NOTICE: If you get a 404 error while running, that is ok, that is the weather.gov api failing to return results for that call.
