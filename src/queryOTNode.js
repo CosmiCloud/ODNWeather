@@ -11,7 +11,7 @@ module.exports = publish = async (assets, keywords) => {
     data: "weatherdata.json",
     assets,
     keywords,
-    visibility: public,
+    visibility: "public",
   };
   dkg
     .publish(options)
