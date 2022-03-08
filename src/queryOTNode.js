@@ -8,7 +8,7 @@ const dkg = new DKGClient(options);
 
 module.exports = publish = async (assets, keywords) => {
   options = {
-    filepath: "weatherdata.json",
+    data: "weatherdata.json",
     assets,
     keywords,
     visibility: public,
