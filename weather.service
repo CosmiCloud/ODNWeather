@@ -1,0 +1,11 @@
+[Unit]
+Description=ODNWeather
+
+[Service]
+Type=simple
+WorkingDirectory=/root/ODNWeather
+ExecStart=/root/ODNWeather/run_weather.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
