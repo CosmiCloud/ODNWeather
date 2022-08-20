@@ -55,6 +55,7 @@ module.exports = getRandomWeatherdata = async () => {
     `\x1b[35mPublishing weather data from \x1b[32m${name} \x1b[35mlocated in \x1b[32m${timeZone}\x1b[35m timezone!`
   );
 
+  delete latest_station_observations.data["@context"][1]["@version"];
   //build assets
   return {
     keywords: keywords,
