@@ -1,8 +1,8 @@
 const getRandomWeatherdata = require("./src/queryWeather");
 const publishWeatherdataEntity = require("./src/queryOTNode");
 
-// get random entity from wikidata.org
-getRandomWeatherdata().then(({assets, keywords}) => {
-  // publish wikidata entity
-  publishWeatherdataEntity(assets, keywords);
+// get random entity from weather.gov
+getRandomWeatherdata().then(({ keywords, data }) => {
+  // publish weather.gov entity
+  publishWeatherdataEntity(keywords, data);
 });
