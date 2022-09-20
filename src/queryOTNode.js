@@ -21,4 +21,5 @@ module.exports = publish = async (keywords, data) => {
     },
   });
   console.log(UAL);
+  process.exit()
 };
