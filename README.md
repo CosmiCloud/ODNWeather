@@ -10,7 +10,7 @@ Running Origintrail V6 Beta Phase 2 testnode required.
 
 2. Add wallet info and save.
 
-3. Run: sudo npm install && cp weather.service /etc/systemd/system && systemctl daemon-reload && systemctl start weather && systemctl enable weather && journalctl -f -u weather
+3. Run: sudo npm install && chmod +x run_weather.sh && sed -i -e 's/\r$//' run_weather.sh && cp weather.service /etc/systemd/system && systemctl daemon-reload && systemctl start weather && systemctl enable weather && journalctl -f -u weather
 
 You can now close out of the terminal. Make sure your otp and trac funds stay stocked.
 
