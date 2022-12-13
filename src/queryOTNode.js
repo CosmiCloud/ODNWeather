@@ -10,12 +10,11 @@ const dkg = new DKG({
 module.exports = publish = async (keywords, data) => {
   console.log(data);
   const { UAL } = await dkg.asset.create(data, {
-    visibility: "public",
-    keywords: keywords,
-    holdingTimeInYears: 1,
-    tokenAmount: 1,
+    epochsNum: 2,
+    maxNumberOfRetries: 30,
+    frequency: 1,
     blockchain: {
-      name: "otp",
+      name: "otp::testnet",
       publicKey: process.env.PUBLIC_KEY,
       privateKey: process.env.PRIVATE_KEY,
     },
