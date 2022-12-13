@@ -13,7 +13,7 @@ module.exports = publish = async (keywords, data) => {
     epochsNum: 2,
     maxNumberOfRetries: 30,
     frequency: 1,
-    tokenAmount: ethers.utils.parseEther(`"${process.env.TRAC_PAYMENT}"`),
+    tokenAmount: ethers.utils.parseEther(process.env.TRAC_PAYMENT),
     blockchain: {
       name: "otp::testnet",
       publicKey: process.env.PUBLIC_KEY,
