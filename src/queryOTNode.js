@@ -1,4 +1,5 @@
 require("dotenv").config();
+const ethers = require("ethers");
 const DKG = require("dkg.js");
 const dkg = new DKG({
   endpoint: "http://127.0.0.1",
